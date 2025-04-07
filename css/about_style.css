@@ -136,7 +136,7 @@ body {
   }
   
   .video-container video{
-      width:600%;
+      width:60%;
       max-width:800px;
       height:400px;
       object-fit:cover;
