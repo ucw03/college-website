@@ -128,19 +128,18 @@ body {
   }
   
   .video-container{
-      display:flex;
-     justify-content:center;
-     align-items:center;
-     margin-top:30px;
-     padding:20px;
+      position:relative;
+      width:100%;
+      max-width:600px;
+      margin:auto;
+      aspect-ratio:16/9;
+      overflow:hidden;
+      border-radius:12px;
   }
   
   .video-container video{
-      width:60%;
-      max-width:800px;
-      height:400px;
+      width:1000%;
+      height:100px;
       object-fit:cover;
-      border-radius:10px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.3);
   }
   
