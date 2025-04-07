@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="css/about_style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png" id="logo-img"></a>
+            
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#course_call">Course</a></li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+					          <li><a href="about_page.html">About Us</a></li>
+                </ul>
+            </div> 
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+        <div class="wrapper">
+		<div class="r_form_wrap"> 
+    <div class="container">
+    <h1>About Us</h1>
+    
+    <div class="box-wrapper">
+      <div class="box mission" onclick="highlightBox('mission')">
+        <h2>Our Mission</h2>
+        <p>
+          To equip students from all walks of life to reach the pinnacle of success in every desired disciplines and to be competent to face the global challenges.To impart knowledge and inculcate values in students who will become the future professionals and be ambassadors on the global arena.
+        </p>
+      </div>
+
+      <div class="box vision" onclick="highlightBox('vision')">
+        <h2>Our Vision</h2>
+        <p>
+          To create a center of excellence that aims to disseminate the high standards of quality education in all disciplines and to ensure that students bridge the gap between the institute and the industry for successful professional prospects.
+        </p>
+      </div>
+    </div>
+  
+  <div class="video-container">
+  <video controls autoplay muted>
+     <source src="image/video.mp4" type="video/mp4">
+         your browser does not supported the video tag.
+  </video>
+  </div>
+  </div>
+</section>
+  <script>
+    function highlightBox(type) {
+    const missionBox = document.querySelector('.mission');
+    const visionBox = document.querySelector('.vision');
+  
+    // Remove existing highlights
+    missionBox.classList.remove('highlighted');
+    visionBox.classList.remove('highlighted');
+  
+    // Add to the clicked one
+    if (type === 'mission') {
+      missionBox.classList.add('highlighted');
+    } else if (type === 'vision') {
+      visionBox.classList.add('highlighted');
+    }
+  }
+  </script>
+</body>
+</html>
