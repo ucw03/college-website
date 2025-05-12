@@ -86,7 +86,15 @@
 </section>
 
     <div class="none_div"></div>
-
+</body>
+<sript src="https://smtpjs.com/v3/smtp.js">
+<script>
+    function sendemail(){
+	    Email.send({}).then(
+	message => alert("your message is successful sent - Team UCW")
+);
+    }
+</script>
     <script>
         var navLinks = document.getElementById("navLinks");
         function showmenu() {
@@ -96,5 +104,4 @@
             navLinks.style.right = "-200px";
         }
     </script>
-</body>
 </html>
